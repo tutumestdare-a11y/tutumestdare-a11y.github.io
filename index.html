@@ -2,22 +2,28 @@
 <html lang="en">
   <head><title>HTML & CSS NOTES</title></head>
   <body>
-    <h1>Build Responsive Real-World Websites with HTML and CSS
- Notes</h1>
-    <h2>Basics</h2>
-    <img src="./img/High-Level Overview of Web Development.jpg" alt="High-Level Overview of Web Development" height="380" width="675">
-    <img src="./img/What is HTML.jpg" alt="What is HTML" height="380" width="675">
-    <img src="./img/Anatomy of HTML element.jpg" alt="Anatomy of HTML element" height="380" width="675">
-    <h3>What is the point of language in lang="en" in html tag</h3>
-    <p>The primary point of &lt;html lang="en"&gt; is to declare the default language of a web page's content</p>
-    <ol>
-      <li>Assistive technologies, especially screen readers used by visually impaired individuals, rely on this attribute to know how to pronounce words.</li>
-      <li>Web browsers use this tag to understand if a page needs to be translated for the user. It also tells the browser which dictionary to use for spell-checking in editable text areas</li>
-      <li>Search engines like Google and Bing use the language tag to better index your site. It helps ensure that your English website is accurately served to users who are searching for answers in English</li>
-    </ol>
-    <p>If you write a page in English but leave out the lang attribute, a user's screen reader might default to a Spanish or French accent profile.It will try to read English words using foreign phonetic rules, resulting in an unintelligible mess.</p>
-    <p>When you place lang="en" inside the root &lt;html&gt; tag, all other elements on the page inherit English as their default language. However, if you have a specific section or paragraph on your page written in a different language, you can override the default locally</p>
-    <h3>Can &lt;p&gt; contain &lt;li&gt; inside it?</h3>
-    <p>Putting a &lt;ul&gt;, &lt;ol&gt;, or &lt;menu&gt; inside a &lt;p&gt; tag is invalid HTML and will break your page layout.While an &lt;li&gt; can hold block-level elements, a &lt;p&gt; tag is strictly forbidden from containing block-level elements—including lists. However browsers are forgiving and they usually close the p tag before list starts and render the paragraph and list</p>
+    <header>
+      <h1>Build Responsive Real-World Websites with HTML and CSS Notes</h1>
+    </header>
+    <article>
+      <h2>Basics</h2>
+      <img src="./img/High-Level Overview of Web Development.jpg" alt="High-Level Overview of Web Development" height="380" width="675">
+      <img src="./img/What is HTML.jpg" alt="What is HTML" height="380" width="675">
+      <img src="./img/Anatomy of HTML element.jpg" alt="Anatomy of HTML element" height="380" width="675">
+      <h3>What is the point of language in lang="en" in html tag</h3>
+      <p>The primary point of &lt;html lang="en"&gt; is to declare the default language of a web page's content</p>
+      <ol>
+        <li>Assistive technologies, especially screen readers used by visually impaired individuals, rely on this attribute to know how to pronounce words.</li>
+        <li>Web browsers use this tag to understand if a page needs to be translated for the user. It also tells the browser which dictionary to use for spell-checking in editable text areas</li>
+        <li>Search engines like Google and Bing use the language tag to better index your site. It helps ensure that your English website is accurately served to users who are searching for answers in English</li>
+      </ol>
+      <p>If you write a page in English but leave out the lang attribute, a user's screen reader might default to a Spanish or French accent profile.It will try to read English words using foreign phonetic rules, resulting in an unintelligible mess.</p>
+      <p>When you place lang="en" inside the root &lt;html&gt; tag, all other elements on the page inherit English as their default language. However, if you have a specific section or paragraph on your page written in a different language, you can override the default locally</p>
+      <h3>Can &lt;p&gt; contain &lt;li&gt; inside it?</h3>
+      <p>Putting a &lt;ul&gt;, &lt;ol&gt;, or &lt;menu&gt; inside a &lt;p&gt; tag is invalid HTML and will break your page layout.While an &lt;li&gt; can hold block-level elements, a &lt;p&gt; tag is strictly forbidden from containing block-level elements—including lists. However browsers are forgiving and they usually close the p tag before list starts and render the paragraph and list</p>
+    </article>
+    <footer>
+      <a href="css.html">CSS</a>
+    </footer>
   </body>
 </html>
