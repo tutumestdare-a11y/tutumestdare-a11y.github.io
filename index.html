@@ -17,5 +17,7 @@
     </ol>
     <p>If you write a page in English but leave out the lang attribute, a user's screen reader might default to a Spanish or French accent profile.It will try to read English words using foreign phonetic rules, resulting in an unintelligible mess.</p>
     <p>When you place lang="en" inside the root &lt;html&gt; tag, all other elements on the page inherit English as their default language. However, if you have a specific section or paragraph on your page written in a different language, you can override the default locally</p>
+    <h3>Can &lt;p&gt; contain &lt;li&gt; inside it?</h3>
+    <p>Putting a &lt;ul&gt;, &lt;ol&gt;, or &lt;menu&gt; inside a &lt;p&gt; tag is invalid HTML and will break your page layout.While an &lt;li&gt; can hold block-level elements, a &lt;p&gt; tag is strictly forbidden from containing block-level elements—including lists. However browsers are forgiving and they usually close the p tag before list starts and render the paragraph and list</p>
   </body>
 </html>
