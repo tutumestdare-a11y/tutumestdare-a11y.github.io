@@ -12,9 +12,9 @@
     </header>
     <article>
       <img src="./img/What is CSS.jpg" alt="CSS is Cascading Style Sheets. It describes the visual style and presentation of the content written in HTML. It consists of countless properties that developers use to format the content, like properties about font, text, spacing, layout, etc." height="380" width="675" />
-      <br/>
+      <p></p>
       <img src="./img/CSS Rule.jpg" alt="CSS Code snippet" height="380" width="675" />
-      <br/>
+      <p></p>
       <p>If same property needs to be applied to different selectors, use commas in between them.</p>
       <pre>
         <code>
@@ -42,6 +42,21 @@
           }
         </code>
       </pre>
+      <h2>Colors</h2>
+      <img src="./img/The RGB Model.jpg" alt="Image explaining what is RGB color model" height="380" width="675"/>
+      <p></p><img src="./img/Defining Colors in CSS.jpg" alt="Image explaining defining colors using rgb/rgba model and hex model" height="380" width="675"/>
+      <p></p><img src="./img/Shades of Grey.jpg" alt="Image explaining different shades of grey" height="380" width="675"/>
+      <p></p>
+      <h2>Psuedo Classes</h2>
+      <p>selector:first-child { } is psuedo class for selecting first child elements of the selector</p>
+      <p>selector:last-child { } is psuedo class for selecting last child elements of the selector</p>
+      <p>selector:nth-child(n) { } is psuedo class for selecting nth child element of the selector, n is the number of the child. n is not zero index, it can be text too like odd or even</p>
+      <p>article p:first-child {} will not be applied to the first p that is inside the article or its child elements, it only works on the first child that is p, if first child is not p then it will not apply at all.</p>
+      <p>a:link{tex-decoration:none;} is psuedo class for selecting anchor elements that have href value. Also text-decoration none removes underline from link texts</p>
+      <p>a:visited{} is psuedo class for selecting anchor elements that are visited by user, default behavior changes its color, usually we override this behavior and set it same as rest of the links</p>
+      <p>a:hover{} is psuedo class for selecting anchor element that is hovered on, using mouse pointer</p>
+      <p>a:focus{} is psuedo class for selecting anchor element that is focused on, using keyboard buttons, mainly tab</p>
+      <p>a:aactive{} is psuedo class for selecting anchor element that is active, usually clicked on, sometimes when selected using tab and activated using Enter</p>
     </article>
   </body>
 </html>
