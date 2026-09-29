@@ -64,6 +64,17 @@
       <h2>body selector vs universal selector</h2>
       <p>When some properties are applied to body selector, all its child will inherit those properties, except ones that are not transferable, like border, margin, padding,...
       But universal selector, it selects every element, not through inheritance, its applied to all elements, which includes properties that are not transferred from parent to child. </p>
+      <hr/>
+      <p><strong>Collapsing Margins:</strong> when we have two margins that occupy the same space, only one of them is actually visible on the page, the larger one.</p>
+      <hr/>
+      <p>HTML presentation attributes (like width and height on an <img> tag) actually have the lowest priority when stacked against CSS. Any CSS rule—whether it is external, internal, or inline—will completely override them. They should still be used to present images in same aspect ratio while CSS file is still loading</p>
+      <hr/>
+      <p>Whenever one of the properties (height or width) is not defined anywhere for the image, other is calculated to maintain aspect ratio, but if its mentioned anywhere then you have use "auto" to get it to this behavior</p>
+      <hr/>
+      <p>To center a page on the viewport, you can just add a width to the container div, which contains whole page content, and use auto margin for margin-left and margin-right.</p>
+      <hr/>
+      <p><strong>Button border</strong> is only overridden when border style is defined, just changing border color will not work or just use shorthand to update all three</p>
+      <hr/>
     </article>
   </body>
 </html>
