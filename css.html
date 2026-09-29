@@ -3,7 +3,7 @@
   <head>
     <title>CSS Basic Notes</title>
     <meta charset="UTF-8">
-    <style>body{font-family:sans-serif;}</style>
+    <style>body{font-family:sans-serif; line-height:1.5;}</style>
   </head>
   <body>
     <header>
@@ -57,6 +57,13 @@
       <p>a:hover{} is psuedo class for selecting anchor element that is hovered on, using mouse pointer</p>
       <p>a:focus{} is psuedo class for selecting anchor element that is focused on, using keyboard buttons, mainly tab</p>
       <p>a:aactive{} is psuedo class for selecting anchor element that is active, usually clicked on, sometimes when selected using tab and activated using Enter</p>
+      <img src="img/Conflicts Between Selectors.jpg" alt="Image presenting scenario of conflicting selectors and explaining how its resolved" height="768" width="675"/>
+      <p></p>
+      <img src="img/Inheritance.jpg" alt="Image explaining the inheritance in CSS with example" height="380" width="675" />
+<p></p>
+      <h2>body selector vs universal selector</h2>
+      <p>When some properties are applied to body selector, all its child will inherit those properties, except ones that are not transferable, like border, margin, padding,...
+      But universal selector, it selects every element, not through inheritance, its applied to all elements, which includes properties that are not transferred from parent to child. </p>
     </article>
   </body>
 </html>
