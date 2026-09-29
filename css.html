@@ -3,6 +3,7 @@
   <head>
     <title>CSS Basic Notes</title>
     <meta charset="UTF-8">
+    <style>body{font-family:sans-serif;}</style>
   </head>
   <body>
     <header>
@@ -11,7 +12,36 @@
     </header>
     <article>
       <img src="./img/What is CSS.jpg" alt="CSS is Cascading Style Sheets. It describes the visual style and presentation of the content written in HTML. It consists of countless properties that developers use to format the content, like properties about font, text, spacing, layout, etc." height="380" width="675" />
+      <br/>
       <img src="./img/CSS Rule.jpg" alt="CSS Code snippet" height="380" width="675" />
+      <br/>
+      <p>If same property needs to be applied to different selectors, use commas in between them.</p>
+      <pre>
+        <code>
+          h1, p, h3 {
+            property:value;
+          }
+        </code>
+      </pre>
+      <p>If a property needs to be applied only to a selector that is only inside another selector then use spaces between them. </p>
+      <pre>
+        <code>
+          header p {
+            property:value;
+          }
+        </code>
+      </pre>
+      <p>But don't try to replicate html structure in CSS beyond a point, use classes and ids of HTML elements instead.</p>
+      <pre>
+        <code>
+          .className {
+            property:value;
+          }
+          #elementId {
+            property:value;
+          }
+        </code>
+      </pre>
     </article>
   </body>
 </html>
