@@ -1,3 +1,8 @@
 img{
   margin-bottom: 2rem;
 }
+
+body{
+  font-family:sans-serif;
+  line-spacing: 1.5;
+}
