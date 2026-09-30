@@ -42,6 +42,8 @@
           }
         </code>
       </pre>
+      <p>SelectorA + SelectorB (Adjacent Sibling): Targets B only if it is the very next item after A.</p>
+      <p>SelectorA ~ SelectorB (General Sibling): Targets B if it comes anywhere after A, even if there are other tags sitting between them.</p>
       <h2>Colors</h2>
       <img src="./img/The RGB Model.jpg" alt="Image explaining what is RGB color model" height="380" width="675"/>
       <p></p><img src="./img/Defining Colors in CSS.jpg" alt="Image explaining defining colors using rgb/rgba model and hex model" height="380" width="675"/>
@@ -87,6 +89,22 @@
       <p></p>
       <img src="./img/Inline-block elements.jpg" alt="Table comparing block, inline and inline-block elements" height="380" width="675"/>
       <p></p>
+      <h2>Psuedo Elements</h2>
+      <p> While Pseudo class targets an entire existing element during a specific state or condition, Pseudo Element targets a specific part or a sub-section of an element.</p>
+      <ul>
+        <li>selector::first-letter
+        <ul>
+          <li>&lt;p&gt;"Hello!"&lt;/p&gt;  -- Matches BOTH the `"` and the `H`</li>
+          <li>&lt;p&gt;#Hash&lt;/p&gt;     -- Matches the `#`</li>
+          <li>"Text \[\rightarrow \] Matches " and T</li>
+          <li>&lt;p&gt;👋 Hello world!&lt;/p&gt; -- ::first-letter successfully captures the whole emoji</li>
+          <li>&lt;p&gt;👋🚀🔥&lt;/p&gt; -- In several browser versions, ::first-letter will match nothing at all because no typographic text follows it</li>
+        </ul>
+        </li>
+        <li>selector::first-line --targets a structural layout block (the entire first rendered line of text)</li>
+        <li>selector::after -- used to add content after a selector and style it, added content will be inline element by default</li>
+        <li>selector::before -- used to add content before a selector and style it, added content will be inline element by default</li>
+      </ul>
     </article>
   </body>
 </html>
