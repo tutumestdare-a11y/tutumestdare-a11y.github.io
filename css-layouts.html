@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CSS Layouts</title>
+    <meta charset="UTF-8"/>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>CSS Layouts</h1>
+    <img src="./img/css-layout/Layout.jpg" alt="Image explaining what is layout in html world" height="380" width="675"/>
+    <img src="./img/css-layout/Page Layout vs Component Layout.jpg" alt="Image explaining what is page layout and what is component layout" height="380" width="675"/>
+    <h2>Floats</h2>
+    <img src="./img/css-layout/Absolute Positioning vs Floats.jpg" alt="Image comparing absoulte positioning with floats" height="380" width="675"/>
+    <p>When float:left or float:right is used the element behaves like its pulled out of page and if any background styles are present they will begin to act like they no longer have any content and collapse, unless there is padding defined or there is fixed height defined.</p>
+    <p>To resolve this we have to use clear property after the float elements, in same parent</p>
+    <ol>
+      <li>
+        <pre>
+          <code>
+            .clear{
+              clear:both; -- could be right or left too
+            }
+          </code>
+        </pre>
+        define an empty div after floating elements with this class
+      </li>
+      <li>
+        <pre>
+          <code>
+            .clear-fix::after{
+              clear:both;
+              content: ""; --without content after will not have any impact, define it even if its empty content
+              display:block; --clearing floats only works on block level elements. ::after and before creates inline
+            }
+          </code>
+        </pre>
+        add this class to the parent element. No need to create empty manual divs
+      </li>
+    </ol>
+    <h2>Flexbox</h2>
+    <h2>CSS Grid</h2>
+  </body>
+</html>
