@@ -77,6 +77,8 @@
       <hr/>
       <p><strong>Button border</strong> is only overridden when border style is defined, just changing border color will not work or just use shorthand to update all three</p>
       <hr/>
+      <p>When we want to center a group of inline or inline-block elements we use text-align:center on their parent element</p>
+      <hr/>
       <img src="./img/The CSS Box Model.jpg" alt="Image explaining CSS box model and related terms" height="380" width="675"/>
       <p></p>
       <img src="./img/Element Height and Width Calculation.jpg" alt="Image explaining how final height and width of an element is calculated" height="380" width="675"/>
@@ -96,7 +98,7 @@
         <ul>
           <li>&lt;p&gt;"Hello!"&lt;/p&gt;  -- Matches BOTH the `"` and the `H`</li>
           <li>&lt;p&gt;#Hash&lt;/p&gt;     -- Matches the `#`</li>
-          <li>"Text \[\rightarrow \] Matches " and T</li>
+          <li>"Text &rarr; Matches " and T</li>
           <li>&lt;p&gt;👋 Hello world!&lt;/p&gt; -- ::first-letter successfully captures the whole emoji</li>
           <li>&lt;p&gt;👋🚀🔥&lt;/p&gt; -- In several browser versions, ::first-letter will match nothing at all because no typographic text follows it</li>
         </ul>
@@ -105,6 +107,12 @@
         <li>selector::after -- used to add content after a selector and style it, added content will be inline element by default</li>
         <li>selector::before -- used to add content before a selector and style it, added content will be inline element by default</li>
       </ul>
+      
+      <img src="./img/Normal Flow vs Absolute Positioning.jpg" alt="Table outlining normal flow and absolute positioning" height="380" width="675"/>
+      <p></p>
+      <img src="./img/Understanding Absolute Positioning.jpg" alt="Image explaining what is absolute positioning" height="380" width="675"/>
+      <div></div>
     </article>
+    <a href="css-layouts.html"></a>
   </body>
 </html>
